@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ponpandiyan- Portfolio</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f0f0f0;
+            }
+            header{
+                background-color: #333;
+                color: #fff;
+                text-align: center;
+                padding: 2rem 0;
+                position: relative;
+            }
+            .header-content h1{
+                font-size: 2.5rem;
+            }
+            .profile-picture{
+                width: 100px;
+                height: 100px;
+                border-radius: 75%;
+                object-fit: cover;
+                position: absolute;
+                top: 75px;
+                left: 100px;
+            }
+            nav{
+                background-color: #333;
+                color: #fff;
+                text-align: center;
+            }
+            nav ul{
+                list-style-type: none;
+                padding: 10px;
+            }
+            nav ul li{
+                display: inline;
+                margin: 0 20px;
+            }
+            nav ul li a{
+                text-decoration: none;
+                color: #fff;
+            }
+            .section-content{
+                background-color: lightblue;
+            
+                padding: 2rem;
+                margin: 1rem;
+                border-radius: 20px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+            }
+            
+            
+            .button{
+                color:#fff;
+                font-size: 16px;
+                text-transform: uppercase;
+                background: #ed1750;
+                padding: 10px 30px;
+                border-radius: 50px;
+                display: inline-block;
+                font-weight: 500;
+                transition: all  4s ease-in-out;
+                border: 2px solid #f64766;
+            }
+            .buttonLhover{
+                background:transparent;
+                color:#f64766;
+
+            }
+            footer{
+                background-color: rgb(177, 173, 230);
+            
+                 padding: 1rem;
+            margin: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+                text-align: center;
+                
+
+            }
+
+
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="header-content">
+                <img src="Snapchat-200382687.jpg" alt="Your Profile Picture" class="profile-picture">
+                <h1>Ponpandiyan G</h1>
+                <p>Passionate on LEARNING</p>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+            </ul>
+        </nav>
+        <section id="about">
+            <div class="section-content">
+                <h2>About me</h2>
+                <p>Hello Everyone! This is Ponpandiyan G. I am a Computer Science Student.</p>
+            </div>
+        </section>
+
+        <section id="Skills">
+            <div class="section-content">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Photoshop editing</li>
+                    <li>video editing</li>
+                    <li>visual basic</li>
+                    <li>web development</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="Education">
+            <div class="section-content">
+                <h2>Eduction</h2>
+                <p>SSLC, HSC Stuydied at Government Higher Secondary School. </p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="section-content">
+                <h2>Projects</h2>
+                
+                <ul>
+                    <li><a href="https://ponpandiyan2004.github.io/portfolio1/">Project 1</a> </li>
+                    <li><a href="">project 2</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="resume">
+            <center>
+                <div class="section-content">
+                 <h2>Resume</h2>
+                 <a href="https://www.goodcv.com/cv/5a2c879c7b6c12357e4657830e323e04" class="button">Download</a>
+                </div>
+            </center>
+        </section>
+
+        <footer>
+            <p>&copy; 2023 Ponpandiyan G</p>
+        </footer>
+        <script>
+           document.querySelectorAll('a[href^="#"]').forEach(anchor=>
+           {
+            anchor.addEventListener('click', function(e))
+            {
+                e.preventDefault();
+                const targetId=this.getAttribute('href'). substring(1);
+                const targetElement= document.getElementById(targetId);
+                if (targetElement){
+                    window.scrollTo({
+                        top: 
+                        tagetElement.offsetTop, behavior:'smooth'
+
+                    });
+                }
+            });
+           
+        };
+
+           
+    </body>   
+</html>
